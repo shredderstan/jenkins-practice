@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         APP_NAME       = "express-login-ui"
-        IMAGE_NAME     = "nileshsun/express-login-ui"
+        IMAGE_NAME     = "kaustavsinha/express-login-ui"
         CONTAINER_PORT = "3000"
         HOST_PORT      = "3000"
     }
@@ -46,7 +46,7 @@ pipeline {
         stage('Docker Login') {
 
             environment {
-                DOCKER_CREDS = credentials('DockerHubCreds')
+                DOCKER_CREDS = credentials('3eca6dc9-9ad4-4204-afb2-7911fda845d7')
             }
 
             steps {
